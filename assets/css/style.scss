@@ -1,5 +1,65 @@
 body{
-    background-color: #000;
+    background-color: #1d1d1d;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.grid{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+.btn-main{
+    border-color: #fff;
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+}
+.loginpanel{
+    position: absolute;
+    background-color: #1d1d1d;
+    width: 100%;
+    .panel {
+        .panel-header{
+            h3{
+                text-align: center;
+            }
+            border-bottom: 1px solid #efe;
+            position: relative;
+            margin-bottom: 3rem;
+            &::before{
+                content: " ";
+                position: absolute;
+                bottom: -1rem;
+                left: calc(50% - 1rem );
+                width: 0;
+                height: 0;
+                border-left: 1rem solid transparent;
+                border-right: 1rem solid transparent;
+                border-top: 1rem solid #efe;
+            }
+            &::after{
+                content: " ";
+                position: absolute;
+                bottom: -0.9rem;
+                left: calc(50% - 0.9rem);
+                width: 0;
+                height: 0;
+                border-left: 0.9rem solid transparent;
+                border-right: 0.9rem solid transparent;
+                border-top: 0.9rem solid #1d1d1d;
+            }
+        }
+        .panel-content{
+            width: 50%;
+            margin: 0 auto;
+            .form-control{
+                color: #fff;
+                background: #1d1d1d;
+            }
+        }
+    }
+}
+
+
