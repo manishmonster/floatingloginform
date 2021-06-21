@@ -17,9 +17,13 @@ body{
     }
 }
 .loginpanel{
+    display: none;
     position: absolute;
     background-color: #1d1d1d;
-    width: 100%;
+    width: 60%;
+    border: 1px solid;
+    border-radius: 6px;
+    box-shadow: 6px 6px 16px 8px #565a50;
     .panel {
         .panel-header{
             h3{
@@ -50,6 +54,17 @@ body{
                 border-right: 0.9rem solid transparent;
                 border-top: 0.9rem solid #1d1d1d;
             }
+            .closing-login {
+                position: absolute;
+                top: 0.5rem;
+                right: 0.5rem;
+                color: #efe;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: none;
+                    color: #0a58ca;
+                }
+            }
         }
         .panel-content{
             width: 50%;
@@ -57,6 +72,18 @@ body{
             .form-control{
                 color: #fff;
                 background: #1d1d1d;
+            }
+            .form-floating > label{
+                color: gray;
+            }
+            .form-check {
+                width: 50%;
+                float: left;
+            }
+            .float-right {
+                width: 50%;
+                float: right;
+                text-align: end;
             }
         }
     }

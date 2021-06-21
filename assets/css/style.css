@@ -22,9 +22,14 @@ body {
 }
 
 .loginpanel {
+  display: none;
   position: absolute;
   background-color: #1d1d1d;
-  width: 100%;
+  width: 60%;
+  border: 1px solid;
+  border-radius: 6px;
+  -webkit-box-shadow: 6px 6px 16px 8px #565a50;
+          box-shadow: 6px 6px 16px 8px #565a50;
 }
 
 .loginpanel .panel .panel-header {
@@ -61,6 +66,19 @@ body {
   border-top: 0.9rem solid #1d1d1d;
 }
 
+.loginpanel .panel .panel-header .closing-login {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #efe;
+  text-decoration: none;
+}
+
+.loginpanel .panel .panel-header .closing-login:hover {
+  text-decoration: none;
+  color: #0a58ca;
+}
+
 .loginpanel .panel .panel-content {
   width: 50%;
   margin: 0 auto;
@@ -69,5 +87,20 @@ body {
 .loginpanel .panel .panel-content .form-control {
   color: #fff;
   background: #1d1d1d;
+}
+
+.loginpanel .panel .panel-content .form-floating > label {
+  color: gray;
+}
+
+.loginpanel .panel .panel-content .form-check {
+  width: 50%;
+  float: left;
+}
+
+.loginpanel .panel .panel-content .float-right {
+  width: 50%;
+  float: right;
+  text-align: end;
 }
 /*# sourceMappingURL=style.css.map */
